@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="./images/logo.svg" alt="" />
+
+      <div class="grid">
+        <img class="top_img" src="./images/hero-mobile.jpg" alt="" />
+
+        <div class="bottom">
+          <p class="heading colored">we're</p>
+          <p class="heading">comming</p>
+          <p class="heading">soon</p>
+          <p class="content">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="input_group">
+            <input
+              name=""
+              class="email"
+              type="text"
+              placeholder="Email Address"
+              onkeydown="clearText()"
+            />
+            <img class="error hidden" src="./images/icon-error.svg" alt="" />
+            <button class="btn">
+              <img class="btn_icon" src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <p class="text hidden">please provide a valid email address</p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

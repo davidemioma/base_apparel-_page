@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans";
+  font-size: 1.8rem;
+  background-image: url(../images/bg-pattern-desktop.svg);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 2rem;
+}
+
+.top_img {
+  width: 100%;
+}
+
+.bottom {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.colored {
+  color: hsl(0, 36%, 70%);
+  font-weight: 200;
+}
+
+.content {
+  margin-top: 3rem;
+  line-height: 1.7;
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: 5.5rem;
+  }
+
+  .content {
+    font-size: 2rem;
+  }
+}
+
+.input_group {
+  background: #fff;
+  border: 1px solid hsl(0, 36%, 70%);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.input_group .email {
+  flex-grow: 1;
+  width: 0;
+  border: 0;
+  outline: 0;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.error {
+  align-self: center;
+  justify-self: end;
+}
+
+.text {
+  margin-top: 1rem;
+  text-align: left;
+  color: hsl(0, 36%, 70%);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 0 2rem;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  background: linear-gradient(to left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  /* transform: scale(1.38); */
+}
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 60% 40%;
+    height: 100vh;
+  }
+
+  .top_img {
+    max-height: 1300px;
+    height: 100vh;
+    content: url(../images/hero-desktop.jpg);
+    object-fit: cover;
+    order: 1;
+    transform: scaleY(1.3);
+  }
+
+  .bottom {
+    text-align: left;
+    align-self: center;
+    padding: 0 10rem;
+  }
+
+  .logo {
+    margin: 2rem 10rem;
+  }
+
+  .email {
+    font-size: 2rem;
+  }
+}
