@@ -117,7 +117,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .grid {
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
     height: 100vh;
   }
 
@@ -138,6 +138,10 @@ body {
 
   .logo {
     margin: 2rem 10rem;
+  }
+
+  .input_group {
+    width: 70%;
   }
 
   .email {
